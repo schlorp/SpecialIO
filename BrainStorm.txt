@@ -1,0 +1,34 @@
+BrainStorm:
+
+turn picture's from your phone into normal maps and bump maps and height maps(maybe live)  (eigen project)
+
+input:
+camera telefoon
+camera laptop
+
+Reden waarom niet is omdat ik dit beter als persoonlijk project kan doen want wil met deze module graag iets met een echt speciale input device doen 
+
+
+
+motion controlls:
+leapmotion op vr headset (goed gemaakt voor hand tracking, makkelijk op headset te bevestigen, klein en licht, accuraat)
+kinect (reden waarom niet is omdat het niet goed gaat werken voor het doel wat ik wil en dat is in vr je eigen handen hebben want de kinect is niet echt portable en makkelijk op te zetten, niet accuraat voor handtracking)
+laptop camera (reden waarom niet is omdat het ook niet goed is voor het doel, niet heel portable, en accuraat voor hand tracking)
+
+
+vr controller(fruit ninja)(kan ook met leapmotion)
+
+
+amazon alexa gebruiken om met audio iets te doen
+
+andere opties
+(waarom niet google home)
+(waarom niet apple pod)
+(waarom niet voice herkening van laptop)
+
+is voor persoonlijk project
+
+
+
+
+

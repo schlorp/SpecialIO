@@ -1,0 +1,13 @@
+1-3-2022:
+vandaag heb ik onderzoek gedaan over welk input device ik wil gebruiken, veel library's gevonden en gezocht en ook veel video's gekeken
+de leukste dingen heb ik opgeschreven
+
+7-3-2022:
+heb in de les mijn presentatie af gemaakt en nog wat extra onderzoek gedaan over producten ga
+morgen me presentatie geven.
+
+8-3-2022:
+heb me Go-Or-No-Go presentatie gegeven en een green light gekregen voor me project.
+
+9-3-2022:
+aan het onderzoeken hoe ik mediapipe kan toepassen in c# (door middel van data door sturen of api gebruiken).
