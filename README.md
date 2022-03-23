@@ -1,6 +1,6 @@
 # Special Input and Output
 
-Dit is Thom Koper zijn special input en output project, in dit project maken we gebruik van een door een bedrijf getrained machine learning AI model om een fruit ninja game te besturen 
+Dit is Thom Koper zijn special input en output project, in dit project maken ik gebruik van een door een bedrijf getrained machine learning AI model om een fruit ninja game te besturen 
 
 ## Scope
 
@@ -8,9 +8,15 @@ Dit is Thom Koper zijn special input en output project, in dit project maken we 
 
 ## Cost
 
-- het kost niks behalve als je geen camera heb op je pc of laptop, dan zou je een moeten aansluiten. Maar voor dit project heb ik zelf een beschikbare camera om de features mee uit te testen. De camera en laptop zijn essentieel. Wat ik moet doen om me doel te bereiken is bekend worden met de mediapipe api en c++ ook moet ik leren hoe ik data van c++ naar c# over geef. 
+- het kost niks behalve als je geen camera heb op je pc of laptop, dan zou je een moeten aansluiten. Maar voor dit project heb ik zelf een beschikbare camera om de features mee uit te testen. De camera en laptop zijn essentieel. Wat ik moet doen om me doel te bereiken is bekend worden met de mediapipe api en bekend worden met het maken van een game in javascript. ook moet ik leren om mediapipe en javascript samen te laten werken 
 
 ## Scedule
 
-- De meeste prioriteit is aan het bekend worden met mediapipe en c++ en dan ook de handtracking toepassen in een test dit duurt me 1 week. daarna het over zetten van data van c++ naar c# gaat me ook 1 week duren. Dan duurt het me 2 weken om de fruit ninja te maken en daar in de controlls van mijn handtracking api te gebruiken.
+- De meeste prioriteit is aan het bekend worden met mediapipe en javascript en dan ook de handtracking toepassen in een test dit duurt me 1 week. daarna het samen laten werken van de game en de handtracking, dit duur me ongeveer 1 week. Dan duurt het me 2 weken om de fruit ninja te maken.
+
+## Bronnen
+
+
+- [de website van de mediapipe api](https://google.github.io/mediapipe/solutions/hands.html)
+- [een video over het maken van een game in javascript](https://www.youtube.com/watch?v=3EMxBkqC4z0)
 

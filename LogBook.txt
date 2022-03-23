@@ -11,3 +11,29 @@ heb me Go-Or-No-Go presentatie gegeven en een green light gekregen voor me proje
 
 9-3-2022:
 aan het onderzoeken hoe ik mediapipe kan toepassen in c# (door middel van data door sturen of api gebruiken).
+
+14-3-2022:
+aan het kijken en overwegen tussen javascript en python ik heb python gekozen en heb de tracking werkende gekregen in python
+
+15-3-2022:
+ik ga vandaag proberen de video feed in een game window te krijgen. ben overgeswitched naar javascript vanwege()
+en heb een test window werkende gekregen
+
+21-3-2022:
+ik ben begonnen met een javascript tutorial te volgen over een game maken*
+
+22-3-2022:
+heb de tutorial af gemaakt en begonnen met het toepassen van een game window en de update en draw functies toe te voegen, ook begonnen met classes.
+ik heb de tracking toegevoegd 
+
+23-3-2022:
+begonnen met het proberen van een cube om de vinger pos te tracken. en heb performace issue opgelost met het laggen van de bewegende cube. 
+dit heb ik getest door middel van het aanpassen van hoeveel er gerenderd word en dan kijken of het fps gekost heeft of niet.
+
+
+
+
+
+*source: https://www.youtube.com/watch?v=3EMxBkqC4z0
+
+
