@@ -1,32 +1,48 @@
-export default class Tracking{
+let detections = {};
+import Box from "./box.js";
+let box = new Box(1280, 720);
+let xpos;
+let ypos;
+export default class Tracking {
     constructor(){
+      this.x = xpos;
+      this.y = ypos;
     }
+    
+    
     track(){
         const videoElement = document.getElementsByClassName('input_video')[0];
-        const canvasElement = document.getElementsByClassName('output_canvas')[0];
-        const canvasCtx = canvasElement.getContext('2d');
+        //const canvasElement = document.getElementsByClassName('output_canvas')[0];
+        //const canvasCtx = canvasElement.getContext('2d');
+        const canvas = document.getElementById("Gamescreen");
+        const ctx = canvas.getContext('2d');
         
-        function onResults(results) {
-          canvasCtx.save();
-          canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
-          canvasCtx.drawImage(
-              results.image, 0, 0, canvasElement.width, canvasElement.height);
-          if (results.multiHandLandmarks) {
-            for (const landmarks of results.multiHandLandmarks) {
-              drawConnectors(canvasCtx, landmarks, HAND_CONNECTIONS,
-                             {color: '#00FF00', lineWidth: 1});
-              drawLandmarks(canvasCtx, landmarks, {color: '#FF0000', lineWidth: 1});
-            }
-            for(let index = 0; index < results.multiHandLandmarks.length; index++){
-                if(index == 8){
-                    ctx.fillStyle = '#0ff';
-                    ctx.fillRect(0,0, 100, 100);
-                }
-            }
+        function gotHands(results) {
+          detections = results;
+          if (detections.multiHandLandmarks[0]) {
+            let x = detections.multiHandLandmarks[0][8].x * 1280
+            let y = detections.multiHandLandmarks[0][8].y * 720
+            box.draw(ctx,parseInt(x),parseInt(y),1,1);
+            xpos = detections.multiHandLandmarks[0][8].x;
           }
-          canvasCtx.restore();
+         
+          // for(let i = 0; i < detections.multiHandLandmarks.length; i++){
+          
+          //   for(let j = 0; j < detections.multiHandLandmarks[i].length; j++){
+          //     xpos = detections.multiHandLandmarks[i][j].x * 1280;
+          //     ypos = detections.multiHandLandmarks[i][j].y * 720;
+          //     box.draw(ctx,parseInt(xpos),parseInt(ypos),1,1);
+          //     //console.log(parseInt(xpos), parseInt(ypos));
+          //   }
+          // }
         }
         
+
+
+
+
+
+        //essential for tracking(getting the camera and grabbing the hand position from there)
         const hands = new Hands({locateFile: (file) => {
           return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
         }});
@@ -36,7 +52,7 @@ export default class Tracking{
           minDetectionConfidence: 0.5,
           minTrackingConfidence: 0.5
         });
-        hands.onResults(onResults);
+        hands.onResults(gotHands);
         
         const camera = new Camera(videoElement, {
           onFrame: async () => {
@@ -45,7 +61,6 @@ export default class Tracking{
           width: 1280,
           height: 720
         });
-
         camera.start();
     }
 }

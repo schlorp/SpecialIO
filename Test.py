@@ -17,8 +17,6 @@ def Game():
   while running:
     if(pygame.display.get_init):
             pygame.display.set_mode(size=(960 , 650))
-            Tracking()
-
             
     for event in pygame.event.get():
         if event.type == pygame.QUIT:

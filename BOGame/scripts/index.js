@@ -11,17 +11,22 @@ let box = new Box(GAME_WIDTH, GAME_HEIGHT);
 let track = new Tracking();
 
 let lastTime = 0;
+
 function gameLoop(timestamp){
     let deltaTime = timestamp - lastTime;
     lastTime = timestamp;
-
     ctx.clearRect(0,0,GAME_WIDTH,GAME_HEIGHT);
-    box.update(deltaTime);
-    box.draw(ctx);
+    
+    
+    //let xpos = track.xpos;
+    //let ypos = track.ypos;
+    
+    //box.draw(ctx,parseInt(track.x),parseInt(track.y),1,1);
+    
 
     requestAnimationFrame(gameLoop);
 }
-
 track.track();
+
 requestAnimationFrame(gameLoop);
 

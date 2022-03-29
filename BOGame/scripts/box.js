@@ -1,5 +1,5 @@
 export default class Box{
-
+    
     constructor(gamewidth, gameheigth){
         this.gamewidth = gamewidth;
         this.gameheigth = gameheigth;
@@ -17,9 +17,12 @@ export default class Box{
         };
     }
 
-    draw(ctx){
+    draw(ctx, xpos, ypos){
+        this.position.x = xpos;
+        this.position.y = ypos;
+
         ctx.fillStyle = '#0ff';
-        ctx.fillRect(this.position.x,this.position.y, this.width, this.heigth);
+        ctx.fillRect(this.position.x,  this.position.y, this.width, this.heigth);
     }
 
 
