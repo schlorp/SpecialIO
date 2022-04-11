@@ -1,48 +1,35 @@
 let detections = {};
-import Box from "./box.js";
-let box = new Box(1280, 720);
-let xpos;
-let ypos;
+export var xpos = 0;
+export var ypos = 0;
+export var camfound = false;
+export var gothands = false;
+
 export default class Tracking {
     constructor(){
-      this.x = xpos;
-      this.y = ypos;
     }
-    
     
     track(){
         const videoElement = document.getElementsByClassName('input_video')[0];
-        //const canvasElement = document.getElementsByClassName('output_canvas')[0];
-        //const canvasCtx = canvasElement.getContext('2d');
         const canvas = document.getElementById("Gamescreen");
         const ctx = canvas.getContext('2d');
         
         function gotHands(results) {
+          //indicating that the camera works and the tracking is running properly
+          camfound = true;
+
           detections = results;
           if (detections.multiHandLandmarks[0]) {
-            let x = detections.multiHandLandmarks[0][8].x * 1280
-            let y = detections.multiHandLandmarks[0][8].y * 720
-            box.draw(ctx,parseInt(x),parseInt(y),1,1);
-            xpos = detections.multiHandLandmarks[0][8].x;
+            xpos = detections.multiHandLandmarks[0][8].x * 1280;
+            ypos = detections.multiHandLandmarks[0][8].y * 720;
+            gothands = true;
           }
-         
-          // for(let i = 0; i < detections.multiHandLandmarks.length; i++){
-          
-          //   for(let j = 0; j < detections.multiHandLandmarks[i].length; j++){
-          //     xpos = detections.multiHandLandmarks[i][j].x * 1280;
-          //     ypos = detections.multiHandLandmarks[i][j].y * 720;
-          //     box.draw(ctx,parseInt(xpos),parseInt(ypos),1,1);
-          //     //console.log(parseInt(xpos), parseInt(ypos));
-          //   }
-          // }
+          else{
+            gothands = false;
+          }
         }
-        
 
 
-
-
-
-        //essential for tracking(getting the camera and grabbing the hand position from there)
+        //essential for tracking(getting the camera and grabbing the hand position from there using the mediapipe machine learning model)
         const hands = new Hands({locateFile: (file) => {
           return `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`;
         }});

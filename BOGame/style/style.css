@@ -1,11 +1,9 @@
 .input_video{
     display: none;
 }
-.output_canvas{
-    transform: scaleX(-1);
-    display: none;
-}
 #Gamescreen{
-    transform: scaleX(-1);
     border: 1px solid black;
+}
+img{
+    display: none;
 }

@@ -30,10 +30,67 @@ ik heb de tracking toegevoegd
 begonnen met het proberen van een cube om de vinger pos te tracken. en heb performace issue opgelost met het laggen van de bewegende cube. 
 dit heb ik getest door middel van het aanpassen van hoeveel er gerenderd word en dan kijken of het fps gekost heeft of niet.
 
+24-3-2022:
+heb rond lopen zoeken naar de documentatie om de x en y positie op te halen, heb 1 video gevonden die me heel veel heeft geholpen**. ik heb daarmee
+het voor elkaar gekregen om de positie te pakken en in de console te zetten
+
+28-3-2022:
+ik heb een lokaal getekend boxje de coordinaten laten volgen. probeer de rest van de dag dat in een ander script te laten tekenen.
+dit lukt moeizaam omdat ik niet de x en y positie weet de exporten naar het aik heb ndere script
+
+29-3-2022:
+ik heb het voor elkaar gekregen om het boxje de x en y coordinaten te laten volgen en die word getekend in een apart script. heb een pointer image gemaakt.
+en heb een random fruit image picker gemaakt. ook pakt hij nu een random positie.
+
+4-4-2022:
+ik heb gewerkt aan een beetje collision, en vooral klasgenoten geholpen en andere vakken
+
+5-4-2022:
+grote stappen gezet richting collision, detection is af nu alleen nog maar het destroyen van het item na een collision
+
+11-4-2022:
+collision af en game is af heb een game over toegevoegd en een menu
+
+
+
 
 
 
 
 *source: https://www.youtube.com/watch?v=3EMxBkqC4z0
+**source: https://www.youtube.com/watch?v=BX8ibqq0MJU
+
+
+
+
+tests:
+
+29-3-2022:
+test1(
+
+)
+
+11-4--2022:
+test2(
+
+probleem: er worden meer objecten verwijderd uit de array als je 1 object kapot slaat
+
+
+hypotese: dit ligt aan de manier van verwijderen en de opzet van de array, of tewel elk obejct word een index verschoven en dat handelt hij verkeerd,
+vooral als ik een object sla boven andere objecten
+
+test: ik ga debuggen met console logs, en ga ondertussen proberen de bug te repliceren 
+
+uitslag: ik heb vast gesteld dat mijn hypotese correct is als ik het bovenste object sla en vernietig gaan de object daar onder ook kapot
+
+)
+
+test3(
+
+
+
+
+)
+
 
 
