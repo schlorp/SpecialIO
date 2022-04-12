@@ -61,6 +61,10 @@ collision af en game is af heb een game over toegevoegd en een menu
 **source: https://www.youtube.com/watch?v=BX8ibqq0MJU
 
 
+bronnenlijst onderzoek:
+https://google.github.io/mediapipe/solutions/hands.html
+
+
 
 
 tests:
