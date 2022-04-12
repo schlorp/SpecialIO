@@ -152,6 +152,13 @@ Dit is Thom Koper zijn special input en output project, in dit project maken ik 
 
     )
 
+- # Trello en gitub
+    - [de Trello](https://trello.com/thomkoper/boards)
+        ![trello screenshot](screens/trello.png)
+    - [de Github](https://github.com/schlorp/SpecialIO)
+
+        ![github logo](screens/github.png)
+
 - # Product
 
     - [het product](https://30997.hosts1.ma-cloud.nl/BOGame/index.html)
