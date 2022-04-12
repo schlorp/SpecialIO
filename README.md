@@ -83,7 +83,7 @@ Dit is Thom Koper zijn special input en output project, in dit project maken ik 
 - # Experimenting
     ik heb voor javascript een tutorial gevolgd over gamedevelopment, hier heb ik 1 dag aan besteed en heb ik heel veel van geleerd. Hier door heb ik dus een extra klein projectje staan met een ping pong en een paddle. Deze game maken was essentieel tot het succes van het project. Door dit projectje heb ik veel geleerd over classes, variablen, draw functies, en exporten. heb hem niet af gemaakt, heb alleen het essentiele gedaan
 
-    [het projectje]() NOG AANVULLEN
+    [het projectje](https://30997.hosts1.ma-cloud.nl/Javascript%20game%20research/index.html)
 - # Mechanics
 
     ## Random object spawner
@@ -154,7 +154,8 @@ Dit is Thom Koper zijn special input en output project, in dit project maken ik 
 
 - # Product
 
-    - [het product]() NOG AANVULLEN
+    - [het product](https://30997.hosts1.ma-cloud.nl/BOGame/index.html)
+    - ik adviseer als je een adblocker hebt hem uit te zetten anders werkt het programma niet
 
 
 - # Bronnen
